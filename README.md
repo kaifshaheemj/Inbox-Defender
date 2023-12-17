@@ -44,6 +44,7 @@ To run this Application
 3. Open your browser and visit http://localhost:5000 to access the spam detection interface.
 
 I hereby attach the output files
+![image](https://github.com/kaifshaheemj/Inbox-Defender/blob/main/image.png)
 ## Acknowledgements
 
 The project utilizes NLTK for text preprocessing, enhancing the models' ability to detect spam messages effectively.
