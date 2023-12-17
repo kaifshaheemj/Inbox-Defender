@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam or Ham Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='spam.png') }}" alt="Spam Checker Logo">
+                <h1 >Spam Checker</h1>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index')}}">Home</a></li>
+                <li><a href="{{ url_for('contact_us')}}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="content">
+            <h1>Spam or Ham Classifier</h1>
+            <form method="POST" autocomplete="off">
+                <h2><label for="sentence">Enter a sentence</label></h2>
+                <input type="text" id="sentence" name="sentence" required autocomplete="off">
+                <button type="submit">Classify</button>
+            </form>
+            {% if results %}
+            <div class="results">
+                <h2>Results:</h2>
+                <ul>
+                    {% for model, result in results %}
+                    <li>
+                        <strong>{{ model }}:</strong>
+                        <span class="{% if result == 'spam' %}spam{% else %}ham{% endif %}">{{ result }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Spam Classifier. All rights reserved. <a href="{{ url_for('contact_us')}}">Contact Us</a></p>
+    </footer>
+</body>
+</html>
