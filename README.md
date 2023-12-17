@@ -43,6 +43,10 @@ To run this Application
 
 3. Open your browser and visit http://localhost:5000 to access the spam detection interface.
 
+4. Install dependencies (assuming you have Python and pip installed):
+   ```bash
+   pip install -r requirements.txt
+
 I hereby attach the output files
 ![image](https://github.com/kaifshaheemj/Inbox-Defender/blob/main/image.png)
 ## Acknowledgements
