@@ -41,11 +41,13 @@ To run this Application
     ```bahs
     python main.py
 
-3. Open your browser and visit http://localhost:5000 to access the spam detection interface.
-
-4. Install dependencies (assuming you have Python and pip installed):
+3. Install dependencies (assuming you have Python and pip installed):
    ```bash
    pip install -r requirements.txt
+   
+4. Open your browser and visit http://localhost:5000 to access the spam detection interface.
+
+
 
 I hereby attach the output files
 ![image](https://github.com/kaifshaheemj/Inbox-Defender/blob/main/image.png)
